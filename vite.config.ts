@@ -3,6 +3,9 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  // Relative base so the built site works on GitHub Pages subpaths
+  // (https://<user>.github.io/lady-fitness-gym/) and any other host.
+  base: './',
   plugins: [react()],
   build: {
     rollupOptions: {
