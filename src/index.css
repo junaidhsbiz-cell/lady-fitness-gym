@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brand-bg: #0D040A;
+    --brand-card: #1E0917;
+    --brand-accent: #FF2A55;
+    --brand-warm: #FF6B18;
+    --brand-gold: #E5C07B;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', 'Hind Siliguri', sans-serif;
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #0D040A;
+    color: #F5E6EE;
+    overflow-x: hidden;
+    selection-background-color: #FF2A55;
+    selection-color: #FFFFFF;
+  }
+}
+
+/* Background Atmosphere */
+.bg-mesh-dark {
+  background-color: #0D040A;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(94, 14, 49, 0.45) 0px, transparent 45%),
+    radial-gradient(at 100% 0%, rgba(255, 107, 24, 0.18) 0px, transparent 40%),
+    radial-gradient(at 50% 30%, rgba(61, 7, 31, 0.65) 0px, transparent 65%),
+    radial-gradient(at 100% 70%, rgba(255, 42, 85, 0.22) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(30, 9, 23, 0.95) 0px, transparent 60%);
+  background-attachment: fixed;
+}
+
+/* Subtle Geometric Ambient Grid */
+.bg-grid-pattern {
+  background-size: 50px 50px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 42, 85, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 42, 85, 0.04) 1px, transparent 1px);
+}
+
+/* Luxury Glassmorphism */
+.glass-nav {
+  background: rgba(13, 4, 10, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 42, 85, 0.14);
+}
+
+.glass-card {
+  background: rgba(30, 9, 23, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 42, 85, 0.16);
+}
+
+.glass-card-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-card-hover:hover {
+  background: rgba(42, 12, 33, 0.88);
+  border-color: rgba(255, 42, 85, 0.45);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px -10px rgba(255, 42, 85, 0.22);
+}
+
+/* Typography Gradients */
+.text-gradient {
+  background: linear-gradient(135deg, #FFFFFF 0%, #FFAAC0 30%, #FF2A55 70%, #FF6B18 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #FFF6DA 0%, #FFB84C 50%, #E5C07B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-rose {
+  background: linear-gradient(135deg, #FFFFFF 0%, #FFAAC0 45%, #FF2A55 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Shimmer Border */
+.shimmer-border {
+  position: relative;
+}
+.shimmer-border::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 42, 85, 0.6), rgba(255, 184, 76, 0.6), transparent);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: shimmer 3s linear infinite;
+  background-size: 200% 100%;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #0D040A;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A0C21;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF2A55;
+}
+
+/* Reduced Motion Safety */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

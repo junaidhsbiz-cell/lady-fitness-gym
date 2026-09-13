@@ -1,0 +1,27 @@
+{
+  "theme": "dark",
+  "project": {
+    "name": "Lady Fitness GYM Narayanganj",
+    "type": "react-typescript-vite"
+  },
+  "capabilities": {
+    "plan_mode": true
+  },
+  "commands": {
+    "dev": "npm run dev",
+    "build": "npm run build",
+    "typecheck": "npx tsc --noEmit"
+  },
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@latest"]
+    },
+    "motion": {
+      "url": "https://mcp.motion.dev"
+    },
+    "motion-plus": {
+      "url": "https://mcp.motion.dev/plus"
+    }
+  }
+}

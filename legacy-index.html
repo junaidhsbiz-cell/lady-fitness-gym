@@ -1,0 +1,1649 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lady Fitness GYM Narayanganj | 100% Female-Only Fitness & Wellness</title>
+  <meta name="description" content="Narayanganj's premier 100% women-only fitness center. Certified female trainers, Zumba, Yoga, Strength Training, PCOS care, and 100% privacy guaranteed in Chashara, Narayanganj." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Hind+Siliguri:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Canvas Confetti CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            rose: {
+              50: '#fff1f2',
+              100: '#ffe4e6',
+              200: '#fecdd3',
+              300: '#fda4af',
+              400: '#fb7185',
+              500: '#f43f5e',
+              600: '#e11d48',
+              700: '#be123c',
+              800: '#9f1239',
+              900: '#881337',
+              950: '#4c0519',
+            },
+            brand: {
+              gold: '#E5C07B',
+              rose: '#E85D75',
+              darkRose: '#8C1D40',
+              plum: '#1A0B18',
+              deepPlum: '#100510',
+              accent: '#FB7185',
+              softPink: '#FFF0F5',
+              cardDark: '#201020',
+              borderDark: '#3A1E35'
+            }
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'Hind Siliguri', 'sans-serif'],
+            display: ['Outfit', 'Playfair Display', 'Hind Siliguri', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+            bengali: ['Hind Siliguri', 'sans-serif']
+          },
+          boxShadow: {
+            'glow-rose': '0 0 35px -5px rgba(232, 93, 117, 0.35)',
+            'glow-gold': '0 0 30px -5px rgba(229, 192, 123, 0.3)',
+            'glass': '0 8px 32px 0 rgba(26, 11, 24, 0.37)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Glassmorphism & custom styling */
+    .glass-nav {
+      background: rgba(16, 5, 16, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(232, 93, 117, 0.15);
+    }
+    .glass-card {
+      background: rgba(32, 16, 32, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(232, 93, 117, 0.18);
+    }
+    .glass-card-hover:hover {
+      background: rgba(45, 20, 45, 0.85);
+      border-color: rgba(232, 93, 117, 0.4);
+      transform: translateY(-4px);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .text-gradient {
+      background: linear-gradient(135deg, #FFF0F5 0%, #FB7185 50%, #E5C07B 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .text-gradient-gold {
+      background: linear-gradient(135deg, #FFE898 0%, #E5C07B 50%, #C89B3C 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .bg-mesh {
+      background-color: #100510;
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(140, 29, 64, 0.3) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(229, 192, 123, 0.15) 0px, transparent 40%),
+        radial-gradient(at 50% 50%, rgba(76, 5, 25, 0.25) 0px, transparent 60%),
+        radial-gradient(at 100% 100%, rgba(232, 93, 117, 0.2) 0px, transparent 50%),
+        radial-gradient(at 0% 100%, rgba(26, 11, 24, 0.8) 0px, transparent 50%);
+    }
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #100510;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #3A1E35;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #E85D75;
+    }
+  </style>
+</head>
+<body class="bg-mesh text-slate-100 font-sans antialiased min-h-screen selection:bg-rose-500 selection:text-white">
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="bg-gradient-to-r from-brand-darkRose via-rose-600 to-amber-600 text-white text-xs md:text-sm py-2 px-4 text-center font-medium relative z-50 flex items-center justify-center gap-2 shadow-md">
+    <span class="inline-flex items-center gap-1 bg-white/20 backdrop-blur-sm px-2 py-0.5 rounded-full text-xs font-semibold uppercase tracking-wider">
+      <i data-lucide="sparkles" class="w-3.5 h-3.5"></i> <span data-i18n="topbar_badge">Special Offer</span>
+    </span>
+    <span data-i18n="topbar_text">🎉 Free 1-Day VIP Trial Pass + Body Composition Analysis for Narayanganj Women!</span>
+    <button onclick="openTrialModal()" class="underline hover:text-amber-200 font-bold ml-1 transition">
+      <span data-i18n="topbar_btn">Claim Now &rarr;</span>
+    </button>
+  </div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="sticky top-0 z-40 glass-nav transition-all duration-300" id="mainHeader">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-3 group">
+          <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-rose-600 to-amber-400 p-0.5 flex items-center justify-center shadow-glow-rose group-hover:scale-105 transition">
+            <div class="w-full h-full bg-brand-deepPlum rounded-[14px] flex items-center justify-center">
+              <i data-lucide="crown" class="w-6 h-6 text-rose-400 group-hover:text-amber-300 transition"></i>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <div class="flex items-center gap-1.5">
+              <span class="font-display font-extrabold text-xl tracking-tight text-white group-hover:text-rose-200 transition">LADY FITNESS</span>
+              <span class="text-[10px] bg-rose-500/20 text-rose-300 border border-rose-500/30 px-1.5 py-0.2 rounded font-semibold uppercase tracking-wider">100% Women</span>
+            </div>
+            <span class="text-xs text-rose-300/80 font-medium tracking-wide">GYM & WELLNESS • NARAYANGANJ</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-300">
+          <a href="#about" class="hover:text-rose-400 transition" data-i18n="nav_about">About Us</a>
+          <a href="#programs" class="hover:text-rose-400 transition" data-i18n="nav_programs">Programs</a>
+          <a href="#schedule" class="hover:text-rose-400 transition" data-i18n="nav_schedule">Class Routine</a>
+          <a href="#trainers" class="hover:text-rose-400 transition" data-i18n="nav_trainers">Female Trainers</a>
+          <a href="#pricing" class="hover:text-rose-400 transition" data-i18n="nav_pricing">Membership</a>
+          <a href="#calculator" class="hover:text-rose-400 transition" data-i18n="nav_calc">BMI & Diet</a>
+          <a href="#contact" class="hover:text-rose-400 transition" data-i18n="nav_contact">Contact</a>
+        </nav>
+
+        <!-- Right Action Controls -->
+        <div class="flex items-center gap-3">
+          
+          <!-- Language Selector -->
+          <button id="langToggle" onclick="toggleLanguage()" class="flex items-center gap-1.5 bg-brand-cardDark/80 hover:bg-brand-borderDark border border-rose-500/20 text-xs px-3 py-1.5 rounded-full text-rose-200 transition font-medium">
+            <i data-lucide="globe" class="w-3.5 h-3.5 text-rose-400"></i>
+            <span id="currentLangLabel">বাংলা</span>
+          </button>
+
+          <!-- Book Trial CTA -->
+          <button onclick="openTrialModal()" class="hidden sm:inline-flex items-center gap-2 bg-gradient-to-r from-rose-500 to-rose-700 hover:from-rose-600 hover:to-rose-800 text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-glow-rose hover:scale-[1.02] active:scale-95 transition">
+            <i data-lucide="sparkles" class="w-4 h-4"></i>
+            <span data-i18n="nav_book_btn">Book Free Trial</span>
+          </button>
+
+          <!-- Mobile Menu Button -->
+          <button onclick="toggleMobileMenu()" class="md:hidden text-slate-300 hover:text-white p-2 focus:outline-none">
+            <i data-lucide="menu" id="mobileMenuIcon" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden md:hidden bg-brand-deepPlum/95 border-b border-rose-500/20 px-4 pt-2 pb-6 space-y-3">
+      <a href="#about" onclick="toggleMobileMenu()" class="block py-2 text-slate-200 hover:text-rose-400 font-medium" data-i18n="nav_about">About Us</a>
+      <a href="#programs" onclick="toggleMobileMenu()" class="block py-2 text-slate-200 hover:text-rose-400 font-medium" data-i18n="nav_programs">Programs</a>
+      <a href="#schedule" onclick="toggleMobileMenu()" class="block py-2 text-slate-200 hover:text-rose-400 font-medium" data-i18n="nav_schedule">Class Routine</a>
+      <a href="#trainers" onclick="toggleMobileMenu()" class="block py-2 text-slate-200 hover:text-rose-400 font-medium" data-i18n="nav_trainers">Female Trainers</a>
+      <a href="#pricing" onclick="toggleMobileMenu()" class="block py-2 text-slate-200 hover:text-rose-400 font-medium" data-i18n="nav_pricing">Membership</a>
+      <a href="#calculator" onclick="toggleMobileMenu()" class="block py-2 text-slate-200 hover:text-rose-400 font-medium" data-i18n="nav_calc">BMI & Diet Calculator</a>
+      <a href="#contact" onclick="toggleMobileMenu()" class="block py-2 text-slate-200 hover:text-rose-400 font-medium" data-i18n="nav_contact">Contact & Map</a>
+      <div class="pt-2">
+        <button onclick="openTrialModal(); toggleMobileMenu();" class="w-full text-center bg-gradient-to-r from-rose-500 to-rose-700 text-white font-semibold py-3 rounded-xl shadow-glow-rose">
+          <span data-i18n="nav_book_btn">Book Free Trial Pass</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-32">
+    <!-- Ambient Background Lighting -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-rose-600/15 rounded-full blur-[140px] pointer-events-none"></div>
+    <div class="absolute top-1/3 right-10 w-96 h-96 bg-amber-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Hero Text -->
+        <div class="lg:col-span-7 space-y-7 text-center lg:text-left">
+          
+          <div class="inline-flex items-center gap-2 bg-gradient-to-r from-rose-500/20 to-amber-500/10 border border-rose-500/30 rounded-full px-4 py-1.5 text-xs sm:text-sm font-semibold text-rose-200 backdrop-blur-md">
+            <span class="w-2 h-2 rounded-full bg-rose-400 animate-ping"></span>
+            <i data-lucide="shield-check" class="w-4 h-4 text-rose-400"></i>
+            <span data-i18n="hero_badge">100% Female Environment • Absolute Privacy Guaranteed</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-extrabold tracking-tight leading-[1.15]">
+            <span data-i18n="hero_title_1">Transform Your Body & Mind In</span><br />
+            <span class="text-gradient font-serif italic" data-i18n="hero_title_2">Complete Privacy & Comfort</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed" data-i18n="hero_desc">
+            Narayanganj's most exclusive female-only fitness studio. Certified women trainers, customized weight loss & PCOS recovery programs, high-energy Zumba, Yoga, and state-of-the-art equipment designed specifically for women.
+          </p>
+
+          <!-- Key Highlights Pills -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-1 text-xs font-medium text-slate-300">
+            <div class="flex items-center gap-1.5 bg-brand-cardDark/80 border border-rose-500/20 px-3 py-1.5 rounded-lg">
+              <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
+              <span data-i18n="feat_pill_1">100% Female Staff & Trainers</span>
+            </div>
+            <div class="flex items-center gap-1.5 bg-brand-cardDark/80 border border-rose-500/20 px-3 py-1.5 rounded-lg">
+              <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
+              <span data-i18n="feat_pill_2">No Men Allowed At Any Time</span>
+            </div>
+            <div class="flex items-center gap-1.5 bg-brand-cardDark/80 border border-rose-500/20 px-3 py-1.5 rounded-lg">
+              <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
+              <span data-i18n="feat_pill_3">Personalized Diet & Workout Plans</span>
+            </div>
+          </div>
+
+          <!-- Hero CTAs -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+            <button onclick="openTrialModal()" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-rose-500 via-rose-600 to-amber-500 hover:from-rose-600 hover:to-amber-600 text-white font-bold text-base px-8 py-4 rounded-full shadow-glow-rose hover:scale-105 active:scale-95 transition">
+              <i data-lucide="calendar-check" class="w-5 h-5"></i>
+              <span data-i18n="hero_cta_primary">Book Free 1-Day Trial</span>
+            </button>
+            <a href="#schedule" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brand-cardDark hover:bg-brand-borderDark border border-rose-500/30 text-rose-200 font-semibold text-base px-7 py-4 rounded-full transition">
+              <i data-lucide="clock" class="w-5 h-5 text-rose-400"></i>
+              <span data-i18n="hero_cta_secondary">View Class Schedule</span>
+            </a>
+          </div>
+
+          <!-- Social Proof Stats -->
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-rose-500/20 max-w-lg mx-auto lg:mx-0">
+            <div>
+              <p class="text-2xl sm:text-3xl font-extrabold font-display text-white">10,000+</p>
+              <p class="text-xs text-rose-300 font-medium" data-i18n="stat_1">FB Community & Members</p>
+            </div>
+            <div>
+              <p class="text-2xl sm:text-3xl font-extrabold font-display text-gradient-gold">100%</p>
+              <p class="text-xs text-rose-300 font-medium" data-i18n="stat_2">Female-Only Privacy</p>
+            </div>
+            <div>
+              <p class="text-2xl sm:text-3xl font-extrabold font-display text-white">6+ Yrs</p>
+              <p class="text-xs text-rose-300 font-medium" data-i18n="stat_3">Narayanganj's #1 Choice</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Hero Visual / Feature Card -->
+        <div class="lg:col-span-5 relative">
+          
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <!-- Glow Border Frame -->
+            <div class="absolute -inset-1.5 bg-gradient-to-r from-rose-500 via-amber-400 to-rose-700 rounded-3xl blur-md opacity-60 animate-pulse"></div>
+            
+            <div class="relative rounded-3xl overflow-hidden glass-card border border-rose-500/30 shadow-2xl p-4 sm:p-6 space-y-6">
+              
+              <!-- Image Banner with Overlay -->
+              <div class="relative rounded-2xl overflow-hidden aspect-[4/3] bg-brand-plum">
+                <img 
+                  src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1000&q=80" 
+                  alt="Women working out at Lady Fitness GYM Narayanganj" 
+                  class="w-full h-full object-cover object-center transform hover:scale-105 transition duration-700"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-brand-deepPlum via-brand-deepPlum/30 to-transparent"></div>
+                
+                <div class="absolute top-3 left-3 bg-brand-deepPlum/80 backdrop-blur-md border border-rose-500/40 rounded-full px-3 py-1 flex items-center gap-1.5 text-xs text-rose-200 font-semibold">
+                  <i data-lucide="lock" class="w-3.5 h-3.5 text-rose-400"></i>
+                  <span data-i18n="hero_card_tag">Chashara, Narayanganj Studio</span>
+                </div>
+
+                <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+                  <div class="bg-brand-deepPlum/90 backdrop-blur-md px-3 py-2 rounded-xl border border-rose-500/20">
+                    <p class="text-xs text-rose-300" data-i18n="hero_card_shift">Operating Shifts</p>
+                    <p class="text-sm font-bold text-white">6:00 AM – 10:00 PM</p>
+                  </div>
+                  <button onclick="openVideoTourModal()" class="w-11 h-11 rounded-full bg-rose-600/90 hover:bg-rose-500 text-white flex items-center justify-center shadow-lg transition hover:scale-110">
+                    <i data-lucide="play" class="w-5 h-5 ml-0.5 fill-white"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Quick Booking Mini Form inside Hero Card -->
+              <div class="space-y-3 pt-2">
+                <div class="flex items-center justify-between text-xs font-semibold text-rose-300">
+                  <span data-i18n="hero_quick_title">⚡ Quick Free Pass Reservation</span>
+                  <span class="text-emerald-400 flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Slots Open Today</span>
+                </div>
+                
+                <form id="heroQuickForm" onsubmit="handleHeroQuickSubmit(event)" class="space-y-2.5">
+                  <input 
+                    type="text" 
+                    id="heroName" 
+                    placeholder="Your Name (আপনার নাম)" 
+                    required 
+                    class="w-full bg-brand-deepPlum/90 border border-rose-500/30 rounded-xl px-4 py-2.5 text-sm text-white placeholder-slate-400 focus:outline-none focus:border-rose-400 transition"
+                  />
+                  <input 
+                    type="tel" 
+                    id="heroPhone" 
+                    placeholder="Mobile Number (01XXXXXXXXX)" 
+                    required 
+                    class="w-full bg-brand-deepPlum/90 border border-rose-500/30 rounded-xl px-4 py-2.5 text-sm text-white placeholder-slate-400 focus:outline-none focus:border-rose-400 transition"
+                  />
+                  <button 
+                    type="submit" 
+                    class="w-full bg-gradient-to-r from-rose-500 to-amber-500 hover:from-rose-600 hover:to-amber-600 text-white font-bold py-3 rounded-xl shadow-md hover:shadow-glow-rose transition flex items-center justify-center gap-2 text-sm"
+                  >
+                    <i data-lucide="check" class="w-4 h-4"></i>
+                    <span data-i18n="hero_quick_btn">Claim My Free 1-Day Pass</span>
+                  </button>
+                </form>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE LADY FITNESS (PRIVACY & SPECIALTIES) -->
+  <section id="about" class="py-20 bg-brand-plum/40 border-y border-rose-500/15 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+        <span class="text-xs font-bold tracking-widest text-rose-400 uppercase bg-rose-500/10 border border-rose-500/20 px-3 py-1 rounded-full" data-i18n="why_badge">
+          Designed Exclusively For Women
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-display font-bold text-white">
+          <span data-i18n="why_title_1">Why Narayanganj Women Love</span> <span class="text-gradient font-serif italic" data-i18n="why_title_2">Lady Fitness</span>
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base" data-i18n="why_subtitle">
+          We understand the specific fitness challenges, privacy needs, and cultural comfort required by women in Narayanganj. Here is what makes us truly unique:
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Feature 1 -->
+        <div class="glass-card glass-card-hover p-7 rounded-2xl space-y-4 relative overflow-hidden group">
+          <div class="w-12 h-12 rounded-xl bg-rose-500/20 border border-rose-500/30 flex items-center justify-center text-rose-400 group-hover:bg-rose-500 group-hover:text-white transition">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white" data-i18n="why_card1_title">100% Privacy & Female Staff</h3>
+          <p class="text-sm text-slate-300 leading-relaxed" data-i18n="why_card1_desc">
+            Full biometric entry, tinted frosted windows, and strictly 100% female staff and certified trainers. Feel completely secure and free while exercising in comfortable sportswear or hijab.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="glass-card glass-card-hover p-7 rounded-2xl space-y-4 relative overflow-hidden group">
+          <div class="w-12 h-12 rounded-xl bg-rose-500/20 border border-rose-500/30 flex items-center justify-center text-rose-400 group-hover:bg-rose-500 group-hover:text-white transition">
+            <i data-lucide="heart-pulse" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white" data-i18n="why_card2_title">PCOS & Post-Natal Programs</h3>
+          <p class="text-sm text-slate-300 leading-relaxed" data-i18n="why_card2_desc">
+            Specialized workout and nutritional programs designed specifically for hormonal imbalances (PCOS/PCOD), thyroid management, and post-pregnancy core restoration.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="glass-card glass-card-hover p-7 rounded-2xl space-y-4 relative overflow-hidden group">
+          <div class="w-12 h-12 rounded-xl bg-rose-500/20 border border-rose-500/30 flex items-center justify-center text-rose-400 group-hover:bg-rose-500 group-hover:text-white transition">
+            <i data-lucide="music" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white" data-i18n="why_card3_title">Energetic Zumba & Aerobics</h3>
+          <p class="text-sm text-slate-300 leading-relaxed" data-i18n="why_card3_desc">
+            Burn up to 600 calories per session in our high-energy dance cardio, Bollywood dance fitness, and rhythmic aerobics sessions led by licensed instructors.
+          </p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="glass-card glass-card-hover p-7 rounded-2xl space-y-4 relative overflow-hidden group">
+          <div class="w-12 h-12 rounded-xl bg-rose-500/20 border border-rose-500/30 flex items-center justify-center text-rose-400 group-hover:bg-rose-500 group-hover:text-white transition">
+            <i data-lucide="utensils" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white" data-i18n="why_card4_title">Customized Bangladeshi Diet</h3>
+          <p class="text-sm text-slate-300 leading-relaxed" data-i18n="why_card4_desc">
+            No unrealistic western diets. Get practical, delicious meal plans using everyday Bangladeshi foods (Fish, Dal, Veggies, Brown Rice, Local Fruits) crafted by clinical nutritionists.
+          </p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="glass-card glass-card-hover p-7 rounded-2xl space-y-4 relative overflow-hidden group">
+          <div class="w-12 h-12 rounded-xl bg-rose-500/20 border border-rose-500/30 flex items-center justify-center text-rose-400 group-hover:bg-rose-500 group-hover:text-white transition">
+            <i data-lucide="sparkle" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white" data-i18n="why_card5_title">Steam, Sauna & Luxury Lockers</h3>
+          <p class="text-sm text-slate-300 leading-relaxed" data-i18n="why_card5_desc">
+            Relax and detoxify after your workout in our modern steam bath, hot showers, and dedicated secure lockers with clean dressing and grooming vanity areas.
+          </p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="glass-card glass-card-hover p-7 rounded-2xl space-y-4 relative overflow-hidden group">
+          <div class="w-12 h-12 rounded-xl bg-rose-500/20 border border-rose-500/30 flex items-center justify-center text-rose-400 group-hover:bg-rose-500 group-hover:text-white transition">
+            <i data-lucide="baby" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white" data-i18n="why_card6_title">Kids Play & Waiting Corner</h3>
+          <p class="text-sm text-slate-300 leading-relaxed" data-i18n="why_card6_desc">
+            Mothers can exercise peacefully while their little ones stay entertained and safe in our comfortable, monitored kids corner with games and books.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- POPULAR PROGRAMS -->
+  <section id="programs" class="py-20 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+        <div>
+          <span class="text-xs font-bold tracking-widest text-amber-400 uppercase bg-amber-500/10 border border-amber-500/20 px-3 py-1 rounded-full" data-i18n="prog_badge">
+            Transformative Workouts
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-display font-bold text-white mt-3">
+            <span data-i18n="prog_title_1">Programs Crafted For</span> <span class="text-gradient font-serif italic" data-i18n="prog_title_2">Every Woman's Goal</span>
+          </h2>
+        </div>
+        <p class="text-slate-300 text-sm max-w-md" data-i18n="prog_subtitle">
+          Whether you want rapid fat loss, toned curves, posture correction, or mental stress relief, we have the ideal regimen for you.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Program 1 -->
+        <div class="glass-card rounded-2xl overflow-hidden group hover:border-rose-500/50 transition duration-300 flex flex-col">
+          <div class="relative h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?auto=format&fit=crop&w=600&q=80" alt="Zumba & Dance Fitness" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-deepPlum to-transparent"></div>
+            <span class="absolute top-3 left-3 bg-rose-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">Most Popular</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <h3 class="text-lg font-bold text-white group-hover:text-rose-300 transition" data-i18n="p1_title">Zumba & Dance Aerobics</h3>
+              <p class="text-xs text-slate-300 mt-1.5 leading-relaxed" data-i18n="p1_desc">High-tempo fat-burning cardio party with infectious beats and easy-to-follow choreography.</p>
+            </div>
+            <div class="pt-3 border-t border-rose-500/15 flex items-center justify-between text-xs text-slate-300">
+              <span class="flex items-center gap-1"><i data-lucide="flame" class="w-3.5 h-3.5 text-amber-400"></i> 550 kcal/hr</span>
+              <button onclick="openBookingModal('Zumba & Dance Aerobics')" class="text-rose-400 font-bold hover:underline" data-i18n="prog_book_btn">Book Slot &rarr;</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 2 -->
+        <div class="glass-card rounded-2xl overflow-hidden group hover:border-rose-500/50 transition duration-300 flex flex-col">
+          <div class="relative h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&fit=crop&w=600&q=80" alt="Strength & Toning" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-deepPlum to-transparent"></div>
+            <span class="absolute top-3 left-3 bg-amber-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">Body Sculpt</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <h3 class="text-lg font-bold text-white group-hover:text-rose-300 transition" data-i18n="p2_title">Weight Training & Toning</h3>
+              <p class="text-xs text-slate-300 mt-1.5 leading-relaxed" data-i18n="p2_desc">Build lean muscle, tone glutes and arms, increase metabolic rate, and boost bone density safely.</p>
+            </div>
+            <div class="pt-3 border-t border-rose-500/15 flex items-center justify-between text-xs text-slate-300">
+              <span class="flex items-center gap-1"><i data-lucide="dumbbell" class="w-3.5 h-3.5 text-amber-400"></i> Free Weights & Machines</span>
+              <button onclick="openBookingModal('Weight Training & Toning')" class="text-rose-400 font-bold hover:underline" data-i18n="prog_book_btn">Book Slot &rarr;</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 3 -->
+        <div class="glass-card rounded-2xl overflow-hidden group hover:border-rose-500/50 transition duration-300 flex flex-col">
+          <div class="relative h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=600&q=80" alt="Yoga & Flexibility" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-deepPlum to-transparent"></div>
+            <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">Mind & Body</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <h3 class="text-lg font-bold text-white group-hover:text-rose-300 transition" data-i18n="p3_title">Yoga, Pilates & Stretch</h3>
+              <p class="text-xs text-slate-300 mt-1.5 leading-relaxed" data-i18n="p3_desc">Improve spine posture, relieve back/joint stiffness, tone deep core, and destress with guided breathing.</p>
+            </div>
+            <div class="pt-3 border-t border-rose-500/15 flex items-center justify-between text-xs text-slate-300">
+              <span class="flex items-center gap-1"><i data-lucide="smile" class="w-3.5 h-3.5 text-emerald-400"></i> Relax & Restore</span>
+              <button onclick="openBookingModal('Yoga, Pilates & Stretch')" class="text-rose-400 font-bold hover:underline" data-i18n="prog_book_btn">Book Slot &rarr;</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 4 -->
+        <div class="glass-card rounded-2xl overflow-hidden group hover:border-rose-500/50 transition duration-300 flex flex-col">
+          <div class="relative h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?auto=format&fit=crop&w=600&q=80" alt="Bride & Post-Natal" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-deepPlum to-transparent"></div>
+            <span class="absolute top-3 left-3 bg-fuchsia-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">Specialized</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <h3 class="text-lg font-bold text-white group-hover:text-rose-300 transition" data-i18n="p4_title">Bride & Post-Natal Care</h3>
+              <p class="text-xs text-slate-300 mt-1.5 leading-relaxed" data-i18n="p4_desc">Targeted 60-day bridal glow-up programs and safe pelvic floor & abdominal recovery for new mothers.</p>
+            </div>
+            <div class="pt-3 border-t border-rose-500/15 flex items-center justify-between text-xs text-slate-300">
+              <span class="flex items-center gap-1"><i data-lucide="sparkles" class="w-3.5 h-3.5 text-fuchsia-400"></i> 1-on-1 Guidance</span>
+              <button onclick="openBookingModal('Bride & Post-Natal Care')" class="text-rose-400 font-bold hover:underline" data-i18n="prog_book_btn">Book Slot &rarr;</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERACTIVE CLASS SCHEDULE & ROUTINE -->
+  <section id="schedule" class="py-20 bg-brand-plum/50 border-t border-rose-500/15 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-12">
+        <span class="text-xs font-bold tracking-widest text-rose-400 uppercase bg-rose-500/10 border border-rose-500/20 px-3 py-1 rounded-full" data-i18n="sched_badge">
+          Flexible Daily Shifts
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-display font-bold text-white">
+          <span data-i18n="sched_title_1">Interactive Weekly</span> <span class="text-gradient font-serif italic" data-i18n="sched_title_2">Class Routine</span>
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base" data-i18n="sched_subtitle">
+          Find the perfect shift that fits your daily routine. Filter by category or time slot and reserve your spot online.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="flex flex-wrap items-center justify-center gap-2 mb-8" id="scheduleFilters">
+        <button onclick="filterSchedule('all', this)" class="px-5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-rose-600 text-white shadow-glow-rose transition filter-btn">
+          All Classes
+        </button>
+        <button onclick="filterSchedule('morning', this)" class="px-5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-brand-cardDark text-slate-300 hover:text-white border border-rose-500/20 transition filter-btn">
+          Morning Shifts (6 AM - 11 AM)
+        </button>
+        <button onclick="filterSchedule('afternoon', this)" class="px-5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-brand-cardDark text-slate-300 hover:text-white border border-rose-500/20 transition filter-btn">
+          Afternoon Shifts (2 PM - 5 PM)
+        </button>
+        <button onclick="filterSchedule('evening', this)" class="px-5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-brand-cardDark text-slate-300 hover:text-white border border-rose-500/20 transition filter-btn">
+          Evening Shifts (5 PM - 10 PM)
+        </button>
+        <button onclick="filterSchedule('zumba', this)" class="px-5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-brand-cardDark text-slate-300 hover:text-white border border-rose-500/20 transition filter-btn">
+          Zumba & Dance
+        </button>
+      </div>
+
+      <!-- Schedule Table / Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="scheduleGrid">
+        
+        <!-- Schedule Item 1 -->
+        <div class="schedule-item glass-card p-6 rounded-2xl border-l-4 border-l-amber-400 space-y-3" data-category="morning zumba">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-amber-300 bg-amber-500/20 px-2.5 py-0.5 rounded-full">06:30 AM – 07:30 AM</span>
+            <span class="text-xs text-slate-400">Sat, Mon, Wed</span>
+          </div>
+          <h4 class="text-lg font-bold text-white">Sunrise Cardio & Zumba Blast</h4>
+          <p class="text-xs text-slate-300">Fast-paced dance workout designed to ignite fat-burning for early risers and working professionals.</p>
+          <div class="flex items-center justify-between pt-2 text-xs">
+            <span class="text-rose-300 font-medium">Trainer: <strong>Nasrin Sultana</strong></span>
+            <button onclick="openBookingModal('Sunrise Cardio & Zumba Blast (6:30 AM)')" class="bg-rose-500/20 hover:bg-rose-500 text-rose-200 hover:text-white font-semibold px-3 py-1.5 rounded-lg border border-rose-500/30 transition">
+              Reserve Seat
+            </button>
+          </div>
+        </div>
+
+        <!-- Schedule Item 2 -->
+        <div class="schedule-item glass-card p-6 rounded-2xl border-l-4 border-l-rose-500 space-y-3" data-category="morning">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-rose-300 bg-rose-500/20 px-2.5 py-0.5 rounded-full">09:00 AM – 10:30 AM</span>
+            <span class="text-xs text-slate-400">Everyday (Sat-Thu)</span>
+          </div>
+          <h4 class="text-lg font-bold text-white">Housewives & Mothers Morning Power</h4>
+          <p class="text-xs text-slate-300">Dedicated morning slot for homemakers. Circuit training, core activation, and flexibility work.</p>
+          <div class="flex items-center justify-between pt-2 text-xs">
+            <span class="text-rose-300 font-medium">Trainer: <strong>Farhana Akter</strong></span>
+            <button onclick="openBookingModal('Mothers Morning Power (9:00 AM)')" class="bg-rose-500/20 hover:bg-rose-500 text-rose-200 hover:text-white font-semibold px-3 py-1.5 rounded-lg border border-rose-500/30 transition">
+              Reserve Seat
+            </button>
+          </div>
+        </div>
+
+        <!-- Schedule Item 3 -->
+        <div class="schedule-item glass-card p-6 rounded-2xl border-l-4 border-l-emerald-400 space-y-3" data-category="afternoon">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-emerald-300 bg-emerald-500/20 px-2.5 py-0.5 rounded-full">03:00 PM – 04:30 PM</span>
+            <span class="text-xs text-slate-400">Sun, Tue, Thu</span>
+          </div>
+          <h4 class="text-lg font-bold text-white">Gentle Yoga & Posture Alignment</h4>
+          <p class="text-xs text-slate-300">Quiet afternoon peaceful session focusing on spine health, sciatic nerve relief, and stress relaxation.</p>
+          <div class="flex items-center justify-between pt-2 text-xs">
+            <span class="text-rose-300 font-medium">Trainer: <strong>Rimi Rahman</strong></span>
+            <button onclick="openBookingModal('Gentle Yoga & Posture (3:00 PM)')" class="bg-rose-500/20 hover:bg-rose-500 text-rose-200 hover:text-white font-semibold px-3 py-1.5 rounded-lg border border-rose-500/30 transition">
+              Reserve Seat
+            </button>
+          </div>
+        </div>
+
+        <!-- Schedule Item 4 -->
+        <div class="schedule-item glass-card p-6 rounded-2xl border-l-4 border-l-fuchsia-400 space-y-3" data-category="evening zumba">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-fuchsia-300 bg-fuchsia-500/20 px-2.5 py-0.5 rounded-full">05:30 PM – 06:45 PM</span>
+            <span class="text-xs text-slate-400">Sat, Mon, Wed</span>
+          </div>
+          <h4 class="text-lg font-bold text-white">Bollywood Beats & Aerobics High-Burn</h4>
+          <p class="text-xs text-slate-300">Energetic evening cardio with popular beats. The most sought-after slot in Narayanganj!</p>
+          <div class="flex items-center justify-between pt-2 text-xs">
+            <span class="text-rose-300 font-medium">Trainer: <strong>Nasrin & Team</strong></span>
+            <button onclick="openBookingModal('Bollywood Aerobics (5:30 PM)')" class="bg-rose-500/20 hover:bg-rose-500 text-rose-200 hover:text-white font-semibold px-3 py-1.5 rounded-lg border border-rose-500/30 transition">
+              Reserve Seat
+            </button>
+          </div>
+        </div>
+
+        <!-- Schedule Item 5 -->
+        <div class="schedule-item glass-card p-6 rounded-2xl border-l-4 border-l-rose-600 space-y-3" data-category="evening">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-rose-300 bg-rose-500/20 px-2.5 py-0.5 rounded-full">07:00 PM – 08:30 PM</span>
+            <span class="text-xs text-slate-400">Sun, Tue, Thu</span>
+          </div>
+          <h4 class="text-lg font-bold text-white">Full Body Toning & Glute Sculpt</h4>
+          <p class="text-xs text-slate-300">Dumbbells, resistance bands, kettlebells and cable machines guided step-by-step for body shape.</p>
+          <div class="flex items-center justify-between pt-2 text-xs">
+            <span class="text-rose-300 font-medium">Trainer: <strong>Farhana Akter</strong></span>
+            <button onclick="openBookingModal('Full Body Toning (7:00 PM)')" class="bg-rose-500/20 hover:bg-rose-500 text-rose-200 hover:text-white font-semibold px-3 py-1.5 rounded-lg border border-rose-500/30 transition">
+              Reserve Seat
+            </button>
+          </div>
+        </div>
+
+        <!-- Schedule Item 6 -->
+        <div class="schedule-item glass-card p-6 rounded-2xl border-l-4 border-l-amber-500 space-y-3" data-category="evening">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-amber-300 bg-amber-500/20 px-2.5 py-0.5 rounded-full">08:30 PM – 09:45 PM</span>
+            <span class="text-xs text-slate-400">Sat, Mon, Wed</span>
+          </div>
+          <h4 class="text-lg font-bold text-white">Late Night Executive Core & HIIT</h4>
+          <p class="text-xs text-slate-300">Convenient slot for doctors, bankers, teachers, and corporate women finishing duty.</p>
+          <div class="flex items-center justify-between pt-2 text-xs">
+            <span class="text-rose-300 font-medium">Trainer: <strong>Farhana & Rimi</strong></span>
+            <button onclick="openBookingModal('Late Night Executive (8:30 PM)')" class="bg-rose-500/20 hover:bg-rose-500 text-rose-200 hover:text-white font-semibold px-3 py-1.5 rounded-lg border border-rose-500/30 transition">
+              Reserve Seat
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERACTIVE WOMEN'S HEALTH & BMI / CALORIE CALCULATOR -->
+  <section id="calculator" class="py-20 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Calculator Description -->
+        <div class="lg:col-span-5 space-y-6">
+          <span class="text-xs font-bold tracking-widest text-rose-400 uppercase bg-rose-500/10 border border-rose-500/20 px-3 py-1 rounded-full" data-i18n="calc_badge">
+            Personal Health Check
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-display font-bold text-white">
+            <span data-i18n="calc_title_1">Instant Women's</span> <span class="text-gradient font-serif italic" data-i18n="calc_title_2">BMI & Calorie Tool</span>
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed" data-i18n="calc_desc">
+            Calculate your Body Mass Index (BMI), ideal target weight range, daily maintenance calories, and receive customized fitness advice for your body structure.
+          </p>
+          
+          <div class="space-y-3 pt-2">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-rose-500/20 text-rose-400 flex items-center justify-center font-bold text-xs">1</div>
+              <span class="text-sm text-slate-300" data-i18n="calc_step1">Input your height, weight & age accurately.</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-rose-500/20 text-rose-400 flex items-center justify-center font-bold text-xs">2</div>
+              <span class="text-sm text-slate-300" data-i18n="calc_step2">Select your daily physical activity level & goal.</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-rose-500/20 text-rose-400 flex items-center justify-center font-bold text-xs">3</div>
+              <span class="text-sm text-slate-300" data-i18n="calc_step3">Get instant personalized guidance & diet breakdown.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Calculator Interactive Card -->
+        <div class="lg:col-span-7">
+          <div class="glass-card p-6 sm:p-8 rounded-3xl border border-rose-500/30 shadow-2xl">
+            
+            <form id="bmiForm" onsubmit="calculateBMI(event)" class="space-y-6">
+              
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div>
+                  <label class="block text-xs font-semibold text-rose-300 mb-1.5" data-i18n="calc_lbl_height">Height (cm)</label>
+                  <input type="number" id="calcHeight" placeholder="e.g. 158" required min="100" max="230" class="w-full bg-brand-deepPlum/90 border border-rose-500/30 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-rose-400" />
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-rose-300 mb-1.5" data-i18n="calc_lbl_weight">Weight (kg)</label>
+                  <input type="number" id="calcWeight" placeholder="e.g. 65" required min="30" max="200" step="0.5" class="w-full bg-brand-deepPlum/90 border border-rose-500/30 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-rose-400" />
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-rose-300 mb-1.5" data-i18n="calc_lbl_age">Age (Years)</label>
+                  <input type="number" id="calcAge" placeholder="e.g. 27" required min="12" max="80" class="w-full bg-brand-deepPlum/90 border border-rose-500/30 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-rose-400" />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-semibold text-rose-300 mb-1.5" data-i18n="calc_lbl_activity">Daily Activity Level</label>
+                  <select id="calcActivity" class="w-full bg-brand-deepPlum/90 border border-rose-500/30 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-rose-400">
+                    <option value="1.2">Sedentary (Little/No Exercise)</option>
+                    <option value="1.375" selected>Lightly Active (1-3 days/wk)</option>
+                    <option value="1.55">Moderately Active (3-5 days/wk)</option>
+                    <option value="1.725">Very Active (6-7 days/wk)</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-rose-300 mb-1.5" data-i18n="calc_lbl_goal">Primary Goal</label>
+                  <select id="calcGoal" class="w-full bg-brand-deepPlum/90 border border-rose-500/30 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-rose-400">
+                    <option value="loss">Weight / Fat Loss (ওজন কমানো)</option>
+                    <option value="maintain">Toning & Fitness (বডি শেপিং)</option>
+                    <option value="gain">Healthy Muscle Gain (মাসল বৃদ্ধি)</option>
+                    <option value="pcos">PCOS & Hormonal Health (হরমোন কেয়ার)</option>
+                  </select>
+                </div>
+              </div>
+
+              <button type="submit" class="w-full bg-gradient-to-r from-rose-500 to-amber-500 hover:from-rose-600 hover:to-amber-600 text-white font-bold py-3.5 rounded-xl shadow-glow-rose hover:scale-[1.01] active:scale-98 transition flex items-center justify-center gap-2">
+                <i data-lucide="calculator" class="w-4 h-4"></i>
+                <span data-i18n="calc_btn">Calculate My BMI & Diet Plan</span>
+              </button>
+
+            </form>
+
+            <!-- Calculation Results Box -->
+            <div id="bmiResultBox" class="hidden mt-6 pt-6 border-t border-rose-500/20 space-y-4 animate-fadeIn">
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+                <div class="bg-brand-deepPlum/80 p-3.5 rounded-xl border border-rose-500/20">
+                  <span class="text-[11px] text-slate-400 block" data-i18n="res_bmi">Your BMI</span>
+                  <span id="resBmiVal" class="text-2xl font-black text-rose-400">24.2</span>
+                  <span id="resBmiCat" class="text-[10px] block font-bold text-emerald-400 uppercase mt-0.5">Normal</span>
+                </div>
+                <div class="bg-brand-deepPlum/80 p-3.5 rounded-xl border border-rose-500/20">
+                  <span class="text-[11px] text-slate-400 block" data-i18n="res_ideal">Ideal Weight</span>
+                  <span id="resIdealVal" class="text-xl font-black text-amber-300">52 - 58 kg</span>
+                  <span class="text-[10px] block text-slate-400 mt-0.5">Target Range</span>
+                </div>
+                <div class="bg-brand-deepPlum/80 p-3.5 rounded-xl border border-rose-500/20">
+                  <span class="text-[11px] text-slate-400 block" data-i18n="res_calories">Daily Calories</span>
+                  <span id="resCalVal" class="text-xl font-black text-white">1,650 kcal</span>
+                  <span class="text-[10px] block text-rose-300 mt-0.5">Recommended</span>
+                </div>
+                <div class="bg-brand-deepPlum/80 p-3.5 rounded-xl border border-rose-500/20">
+                  <span class="text-[11px] text-slate-400 block" data-i18n="res_water">Daily Water</span>
+                  <span id="resWaterVal" class="text-xl font-black text-cyan-300">2.8 L</span>
+                  <span class="text-[10px] block text-slate-400 mt-0.5">Hydration Goal</span>
+                </div>
+              </div>
+
+              <!-- Recommendation Note -->
+              <div class="bg-rose-500/10 border border-rose-500/30 rounded-xl p-4 text-xs text-rose-200 leading-relaxed flex items-start gap-3">
+                <i data-lucide="info" class="w-5 h-5 text-rose-400 shrink-0 mt-0.5"></i>
+                <div id="resAdviceText">
+                  Great job! Based on your parameters, combining 3 days of cardio/Zumba with 2 days of strength training will sculpt your body while keeping your metabolism elevated.
+                </div>
+              </div>
+
+              <div class="text-center pt-1">
+                <button onclick="openTrialModal()" class="inline-flex items-center gap-2 text-xs font-bold text-amber-300 hover:text-amber-200 underline">
+                  <span data-i18n="res_consult_cta">Book a free 1-on-1 diet consultation at our Narayanganj gym &rarr;</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CERTIFIED FEMALE MASTER TRAINERS -->
+  <section id="trainers" class="py-20 bg-brand-plum/40 border-t border-rose-500/15 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+        <span class="text-xs font-bold tracking-widest text-rose-400 uppercase bg-rose-500/10 border border-rose-500/20 px-3 py-1 rounded-full" data-i18n="trainer_badge">
+          Expert Guidance
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-display font-bold text-white">
+          <span data-i18n="trainer_title_1">Meet Your Certified</span> <span class="text-gradient font-serif italic" data-i18n="trainer_title_2">Female Trainers</span>
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base" data-i18n="trainer_subtitle">
+          Friendly, experienced, and dedicated women fitness coaches who motivate and guide you with zero intimidation.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Trainer 1 -->
+        <div class="glass-card rounded-2xl overflow-hidden group hover:border-rose-500/50 transition duration-300">
+          <div class="relative h-72 overflow-hidden bg-brand-deepPlum">
+            <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=600&q=80" alt="Nasrin Sultana - Head Trainer" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-deepPlum via-transparent to-transparent"></div>
+            <span class="absolute top-3 left-3 bg-rose-600/90 text-white text-xs font-bold px-3 py-1 rounded-full">Head Coach</span>
+          </div>
+          <div class="p-6 space-y-3">
+            <div>
+              <h3 class="text-xl font-bold text-white">Nasrin Sultana</h3>
+              <p class="text-xs text-rose-400 font-semibold" data-i18n="t1_role">Licensed Zumba & Aerobics Master</p>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed" data-i18n="t1_bio">
+              7+ years of coaching experience in Narayanganj. Certified in Zumba B1, high-burn dance cardio, and group aerobics.
+            </p>
+            <div class="pt-2 flex items-center justify-between border-t border-rose-500/15 text-xs">
+              <span class="text-slate-400">Spec: Dance & Weight Loss</span>
+              <button onclick="openBookingModal('1-on-1 Session with Nasrin Sultana')" class="text-amber-300 font-bold hover:underline" data-i18n="t_book_btn">Book Session &rarr;</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trainer 2 -->
+        <div class="glass-card rounded-2xl overflow-hidden group hover:border-rose-500/50 transition duration-300">
+          <div class="relative h-72 overflow-hidden bg-brand-deepPlum">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80" alt="Farhana Akter - Strength Coach" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-deepPlum via-transparent to-transparent"></div>
+            <span class="absolute top-3 left-3 bg-amber-600/90 text-white text-xs font-bold px-3 py-1 rounded-full">Senior Coach</span>
+          </div>
+          <div class="p-6 space-y-3">
+            <div>
+              <h3 class="text-xl font-bold text-white">Farhana Akter</h3>
+              <p class="text-xs text-amber-300 font-semibold" data-i18n="t2_role">Strength, Glutes & Posture Specialist</p>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed" data-i18n="t2_bio">
+              Specialized in body re-composition, weight training for women, posture correction, and bridal transformation regimens.
+            </p>
+            <div class="pt-2 flex items-center justify-between border-t border-rose-500/15 text-xs">
+              <span class="text-slate-400">Spec: Strength & Body Toning</span>
+              <button onclick="openBookingModal('1-on-1 Session with Farhana Akter')" class="text-amber-300 font-bold hover:underline" data-i18n="t_book_btn">Book Session &rarr;</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trainer 3 -->
+        <div class="glass-card rounded-2xl overflow-hidden group hover:border-rose-500/50 transition duration-300">
+          <div class="relative h-72 overflow-hidden bg-brand-deepPlum">
+            <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?auto=format&fit=crop&w=600&q=80" alt="Rimi Rahman - Yoga & Nutritionist" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-deepPlum via-transparent to-transparent"></div>
+            <span class="absolute top-3 left-3 bg-emerald-600/90 text-white text-xs font-bold px-3 py-1 rounded-full">Nutrition & Yoga</span>
+          </div>
+          <div class="p-6 space-y-3">
+            <div>
+              <h3 class="text-xl font-bold text-white">Rimi Rahman</h3>
+              <p class="text-xs text-emerald-300 font-semibold" data-i18n="t3_role">Yoga Coach & Clinical Nutritionist</p>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed" data-i18n="t3_bio">
+              Certified Dietitian helping women overcome PCOS, thyroid issues, and post-pregnancy recovery with practical local nutrition.
+            </p>
+            <div class="pt-2 flex items-center justify-between border-t border-rose-500/15 text-xs">
+              <span class="text-slate-400">Spec: PCOS & Custom Diets</span>
+              <button onclick="openBookingModal('1-on-1 Session with Rimi Rahman')" class="text-amber-300 font-bold hover:underline" data-i18n="t_book_btn">Book Session &rarr;</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MEMBERSHIP PACKAGES & PRICING -->
+  <section id="pricing" class="py-20 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+        <span class="text-xs font-bold tracking-widest text-amber-400 uppercase bg-amber-500/10 border border-amber-500/20 px-3 py-1 rounded-full" data-i18n="price_badge">
+          Transparent Membership
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-display font-bold text-white">
+          <span data-i18n="price_title_1">Simple, Affordable</span> <span class="text-gradient font-serif italic" data-i18n="price_title_2">Membership Plans</span>
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base" data-i18n="price_subtitle">
+          No hidden admission fees. All plans include full gym access, female trainer assistance, locker access, and free body analysis.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+        
+        <!-- Plan 1: 1 Month Starter -->
+        <div class="glass-card rounded-3xl p-8 flex flex-col justify-between space-y-6 relative hover:border-rose-500/40 transition">
+          <div class="space-y-4">
+            <span class="text-xs font-bold text-rose-400 uppercase tracking-wider" data-i18n="plan1_tag">Starter Pass</span>
+            <h3 class="text-2xl font-bold text-white" data-i18n="plan1_name">1-Month Standard</h3>
+            <div class="flex items-baseline gap-1">
+              <span class="text-4xl font-extrabold text-white">৳ 1,800</span>
+              <span class="text-slate-400 text-xs">/ month</span>
+            </div>
+            <p class="text-xs text-slate-300" data-i18n="plan1_desc">Ideal for beginners starting their fitness journey in Narayanganj.</p>
+            
+            <ul class="space-y-3 text-xs text-slate-200 pt-4 border-t border-rose-500/15">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i> Unlimited Cardio & Weight Floor Access</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i> 100% Female Trainer Floor Guidance</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i> Free Initial BMI & Body Fat Analysis</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i> Locker & Shower Facilities</li>
+              <li class="flex items-center gap-2 text-slate-500"><i data-lucide="x" class="w-4 h-4 text-slate-600 shrink-0"></i> Dedicated Personalized Diet Chart</li>
+            </ul>
+          </div>
+
+          <button onclick="openCheckoutModal('1-Month Standard', 1800)" class="w-full bg-brand-cardDark hover:bg-brand-borderDark border border-rose-500/30 text-rose-200 font-bold py-3.5 rounded-2xl transition hover:border-rose-400">
+            <span data-i18n="plan_btn">Join 1-Month Plan</span>
+          </button>
+        </div>
+
+        <!-- Plan 2: 3 Months Queen Pass (RECOMMENDED) -->
+        <div class="glass-card rounded-3xl p-8 flex flex-col justify-between space-y-6 relative border-2 border-rose-500 shadow-glow-rose transform md:-translate-y-3 bg-brand-plum/80">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-rose-500 to-amber-500 text-white text-[11px] font-bold px-4 py-1 rounded-full uppercase tracking-wider shadow-md">
+            Most Popular Choice
+          </div>
+
+          <div class="space-y-4 pt-2">
+            <span class="text-xs font-bold text-amber-300 uppercase tracking-wider" data-i18n="plan2_tag">Queen Transformation</span>
+            <h3 class="text-2xl font-bold text-white" data-i18n="plan2_name">3-Month Transformation</h3>
+            <div class="flex items-baseline gap-1">
+              <span class="text-4xl font-extrabold text-gradient-gold">৳ 4,500</span>
+              <span class="text-slate-400 text-xs">/ 3 months (৳1,500/mo)</span>
+            </div>
+            <p class="text-xs text-rose-200 font-medium" data-i18n="plan2_desc">Save ৳900! The ideal timeframe to see visible fat loss and body toning.</p>
+            
+            <ul class="space-y-3 text-xs text-slate-100 pt-4 border-t border-rose-500/25">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i> All Standard Floor & Cardio Access</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i> <strong>Unlimited Zumba & Aerobics Classes</strong></li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i> <strong>Customized Bangladeshi Diet Plan</strong></li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i> Monthly Biometric Progress Tracking</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i> Free Steam Bath (2 sessions/month)</li>
+            </ul>
+          </div>
+
+          <button onclick="openCheckoutModal('3-Month Transformation', 4500)" class="w-full bg-gradient-to-r from-rose-500 via-rose-600 to-amber-500 hover:from-rose-600 hover:to-amber-600 text-white font-bold py-3.5 rounded-2xl shadow-glow-rose hover:scale-[1.02] transition">
+            <span data-i18n="plan_btn_pop">Enroll with bKash/Nagad</span>
+          </button>
+        </div>
+
+        <!-- Plan 3: 6 Months / 1 Year VIP -->
+        <div class="glass-card rounded-3xl p-8 flex flex-col justify-between space-y-6 relative hover:border-rose-500/40 transition">
+          <div class="space-y-4">
+            <span class="text-xs font-bold text-amber-400 uppercase tracking-wider" data-i18n="plan3_tag">VIP Lifestyle</span>
+            <h3 class="text-2xl font-bold text-white" data-i18n="plan3_name">6-Month Platinum VIP</h3>
+            <div class="flex items-baseline gap-1">
+              <span class="text-4xl font-extrabold text-white">৳ 7,800</span>
+              <span class="text-slate-400 text-xs">/ 6 months (৳1,300/mo)</span>
+            </div>
+            <p class="text-xs text-slate-300" data-i18n="plan3_desc">Maximum savings for long-term health and permanent lifestyle change.</p>
+            
+            <ul class="space-y-3 text-xs text-slate-200 pt-4 border-t border-rose-500/15">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i> Full All-Inclusive Access (Gym + Zumba + Yoga)</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i> 1-on-1 Nutritionist Quarterly Consultation</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i> Unlimited Steam Bath & Sauna</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i> Free VIP Gym Kit & Branded Water Bottle</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i> 1 Month Freeze Option (Travel/Medical)</li>
+            </ul>
+          </div>
+
+          <button onclick="openCheckoutModal('6-Month Platinum VIP', 7800)" class="w-full bg-brand-cardDark hover:bg-brand-borderDark border border-rose-500/30 text-rose-200 font-bold py-3.5 rounded-2xl transition hover:border-rose-400">
+            <span data-i18n="plan_btn">Join 6-Month VIP</span>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Secure Payment Badges -->
+      <div class="mt-12 flex flex-wrap items-center justify-center gap-6 text-xs text-slate-400">
+        <span class="flex items-center gap-1.5"><i data-lucide="shield" class="w-4 h-4 text-rose-400"></i> Instant bKash & Nagad Auto Checkout</span>
+        <span class="flex items-center gap-1.5"><i data-lucide="refresh-cw" class="w-4 h-4 text-amber-400"></i> 3-Day Money Back Guarantee if Unsatisfied</span>
+        <span class="flex items-center gap-1.5"><i data-lucide="gift" class="w-4 h-4 text-emerald-400"></i> No Hidden Admission Charges</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS & TRANSFORMATION STORIES -->
+  <section class="py-20 bg-brand-plum/40 border-t border-rose-500/15 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+        <span class="text-xs font-bold tracking-widest text-emerald-400 uppercase bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full" data-i18n="rev_badge">
+          Real Results
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-display font-bold text-white">
+          <span data-i18n="rev_title_1">Stories of Narayanganj</span> <span class="text-gradient font-serif italic" data-i18n="rev_title_2">Women Who Transformed</span>
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base" data-i18n="rev_subtitle">
+          Read genuine reviews from students, housewives, and working women in Chashara and Narayanganj.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Review 1 -->
+        <div class="glass-card p-6 rounded-2xl space-y-4 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex text-amber-400 text-sm">
+              ★★★★★
+            </div>
+            <p class="text-xs sm:text-sm text-slate-200 leading-relaxed italic" data-i18n="r1_text">
+              "নারায়ণগঞ্জে মেয়েদের জন্য এত নিরাপদ এবং খোলামেলা জিম পাওয়া সত্যিই আশীর্বাদ। আমি ৪ মাসে ১২ কেজি ওজন কমিয়েছি এবং আমার ব্যাকপেইন পুরোপুরি চলে গেছে। নাসরিন আপু সবসময় যত্ন নিয়ে গাইড করেন!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-3 border-t border-rose-500/15">
+            <div class="w-10 h-10 rounded-full bg-rose-500/30 flex items-center justify-center font-bold text-rose-300 text-xs">
+              SA
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-white">Sadia Afreen</h4>
+              <p class="text-[11px] text-slate-400">Homemaker, Ukilpara, Narayanganj</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="glass-card p-6 rounded-2xl space-y-4 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex text-amber-400 text-sm">
+              ★★★★★
+            </div>
+            <p class="text-xs sm:text-sm text-slate-200 leading-relaxed italic" data-i18n="r2_text">
+              "I was struggling with PCOS for 3 years. After joining Lady Fitness and following their customized diet & Zumba classes, my hormone levels normalized in 5 months. The privacy is 100% genuine."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-3 border-t border-rose-500/15">
+            <div class="w-10 h-10 rounded-full bg-amber-500/30 flex items-center justify-center font-bold text-amber-300 text-xs">
+              TI
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-white">Tasnim Islam</h4>
+              <p class="text-[11px] text-slate-400">University Student, Chashara</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="glass-card p-6 rounded-2xl space-y-4 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex text-amber-400 text-sm">
+              ★★★★★
+            </div>
+            <p class="text-xs sm:text-sm text-slate-200 leading-relaxed italic" data-i18n="r3_text">
+              "Being a school teacher, finding an evening shift for women only was very difficult until I found Lady Fitness. The environment is clean, steam bath is refreshing, and the equipment is top grade."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-3 border-t border-rose-500/15">
+            <div class="w-10 h-10 rounded-full bg-emerald-500/30 flex items-center justify-center font-bold text-emerald-300 text-xs">
+              MH
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-white">Mahbuba Haque</h4>
+              <p class="text-[11px] text-slate-400">High School Teacher, Narayanganj</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT & LOCATION -->
+  <section id="contact" class="py-20 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Contact Details -->
+        <div class="lg:col-span-5 space-y-6">
+          <span class="text-xs font-bold tracking-widest text-rose-400 uppercase bg-rose-500/10 border border-rose-500/20 px-3 py-1 rounded-full" data-i18n="cont_badge">
+            Visit & Contact
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-display font-bold text-white">
+            <span data-i18n="cont_title_1">We Are Located In</span> <span class="text-gradient font-serif italic" data-i18n="cont_title_2">Heart of Narayanganj</span>
+          </h2>
+          <p class="text-slate-300 text-sm leading-relaxed" data-i18n="cont_desc">
+            Conveniently located near Chashara hub with easy rickshaw, auto, and car parking access. Come visit our studio or chat with our female team directly.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-rose-500/20 text-rose-400 flex items-center justify-center shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white" data-i18n="c_addr_title">Gym Address</h4>
+                <p class="text-xs text-slate-300 mt-0.5">Level-4, Prime Tower, B.B. Road, Chashara, Narayanganj - 1400</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+                <i data-lucide="phone-call" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white" data-i18n="c_phone_title">Helpline & WhatsApp</h4>
+                <p class="text-xs text-slate-300 mt-0.5">+880 1305-479722 / +880 1688-040925</p>
+                <p class="text-[11px] text-emerald-400 font-semibold mt-0.5">Active 24/7 on WhatsApp</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0">
+                <i data-lucide="clock" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white" data-i18n="c_hours_title">Opening Hours</h4>
+                <p class="text-xs text-slate-300 mt-0.5">Saturday – Thursday: 6:00 AM – 10:00 PM</p>
+                <p class="text-[11px] text-amber-300 mt-0.5">Friday: 3:00 PM – 9:00 PM (Special Workshops)</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Direct WhatsApp Button -->
+          <div class="pt-4">
+            <a href="https://wa.me/8801305479722?text=Hello%20Lady%20Fitness%20GYM,%20I%20would%20like%20to%20know%20more%20about%20membership%20and%20class%20schedule." target="_blank" class="inline-flex items-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm px-6 py-3.5 rounded-2xl shadow-lg transition">
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+              <span data-i18n="c_whatsapp_btn">Chat on WhatsApp (Direct)</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Contact Form -->
+        <div class="lg:col-span-7">
+          <div class="glass-card p-6 sm:p-8 rounded-3xl border border-rose-500/30">
+            <h3 class="text-xl font-bold text-white mb-2" data-i18n="form_title">Send Us a Direct Message</h3>
+            <p class="text-xs text-slate-300 mb-6" data-i18n="form_subtitle">Have any questions about fees, slots, or trainer availability? Fill out this quick form and our female coordinator will reach out in minutes.</p>
+
+            <form id="contactForm" onsubmit="handleContactSubmit(event)" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-semibold text-rose-300 mb-1" data-i18n="f_name">Full Name</label>
+                  <input type="text" id="contactName" required placeholder="e.g. Nusrat Jahan" class="w-full bg-brand-deepPlum/90 border border-rose-500/30 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-rose-400" />
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-rose-300 mb-1" data-i18n="f_phone">Phone / WhatsApp</label>
+                  <input type="tel" id="contactPhone" required placeholder="01XXXXXXXXX" class="w-full bg-brand-deepPlum/90 border border-rose-500/30 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-rose-400" />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-rose-300 mb-1" data-i18n="f_interest">Interested In</label>
+                <select id="contactInterest" class="w-full bg-brand-deepPlum/90 border border-rose-500/30 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-rose-400">
+                  <option value="trial">Free 1-Day Trial Pass</option>
+                  <option value="zumba">Zumba & Dance Aerobics</option>
+                  <option value="membership">3-Month Transformation Membership</option>
+                  <option value="pcos">PCOS & Custom Diet Plan</option>
+                  <option value="bridal">Bridal Fitness Package</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-rose-300 mb-1" data-i18n="f_msg">Message / Queries</label>
+                <textarea id="contactMessage" rows="3" placeholder="Tell us your questions or preferred shift..." class="w-full bg-brand-deepPlum/90 border border-rose-500/30 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-rose-400"></textarea>
+              </div>
+
+              <button type="submit" class="w-full bg-gradient-to-r from-rose-500 to-amber-500 hover:from-rose-600 hover:to-amber-600 text-white font-bold py-3.5 rounded-xl shadow-glow-rose transition flex items-center justify-center gap-2">
+                <i data-lucide="send" class="w-4 h-4"></i>
+                <span data-i18n="f_submit_btn">Submit Message</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-deepPlum border-t border-rose-500/20 py-12 text-slate-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        
+        <div class="space-y-3 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-xl bg-gradient-to-tr from-rose-600 to-amber-400 p-0.5 flex items-center justify-center">
+              <div class="w-full h-full bg-brand-deepPlum rounded-[10px] flex items-center justify-center">
+                <i data-lucide="crown" class="w-4 h-4 text-rose-400"></i>
+              </div>
+            </div>
+            <span class="font-display font-extrabold text-base text-white">LADY FITNESS GYM</span>
+          </div>
+          <p class="text-xs text-slate-400 max-w-sm leading-relaxed" data-i18n="foot_desc">
+            The pioneering 100% female-exclusive fitness & wellness center in Narayanganj. Empowering women through safe, private, and high-quality fitness coaching.
+          </p>
+          <div class="flex items-center gap-3 pt-2 text-rose-300">
+            <a href="https://m.facebook.com/100095024926427/" target="_blank" class="w-8 h-8 rounded-full bg-brand-cardDark border border-rose-500/30 flex items-center justify-center hover:text-white hover:bg-rose-600 transition">
+              <i data-lucide="facebook" class="w-4 h-4"></i>
+            </a>
+            <a href="https://wa.me/8801305479722" target="_blank" class="w-8 h-8 rounded-full bg-brand-cardDark border border-rose-500/30 flex items-center justify-center hover:text-white hover:bg-emerald-600 transition">
+              <i data-lucide="phone" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h5 class="text-sm font-bold text-white" data-i18n="foot_quick">Quick Links</h5>
+          <ul class="space-y-1.5">
+            <li><a href="#about" class="hover:text-rose-300 transition" data-i18n="nav_about">About Us</a></li>
+            <li><a href="#programs" class="hover:text-rose-300 transition" data-i18n="nav_programs">Programs</a></li>
+            <li><a href="#schedule" class="hover:text-rose-300 transition" data-i18n="nav_schedule">Class Routine</a></li>
+            <li><a href="#pricing" class="hover:text-rose-300 transition" data-i18n="nav_pricing">Membership Plans</a></li>
+            <li><a href="#calculator" class="hover:text-rose-300 transition" data-i18n="nav_calc">BMI Calculator</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h5 class="text-sm font-bold text-white" data-i18n="foot_hours">Gym Timings</h5>
+          <p class="text-slate-300">Sat – Thu: 6:00 AM – 10:00 PM</p>
+          <p class="text-slate-300">Friday: 3:00 PM – 9:00 PM</p>
+          <p class="text-[11px] text-rose-400 font-semibold pt-2">📍 Chashara, Narayanganj</p>
+        </div>
+
+      </div>
+
+      <div class="border-t border-rose-500/15 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-slate-500">
+        <p>&copy; 2026 Lady Fitness GYM Narayanganj. All rights reserved.</p>
+        <p>100% Female Protected Space • Narayanganj, Bangladesh</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/8801305479722?text=Hello%20Lady%20Fitness%20GYM,%20I%20want%20to%20inquire%20about%20joining%20and%20trial%20passes." target="_blank" class="fixed bottom-6 right-6 z-50 bg-emerald-600 hover:bg-emerald-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all group">
+    <i data-lucide="message-circle" class="w-7 h-7"></i>
+    <span class="absolute right-16 bg-brand-deepPlum/90 text-white text-xs font-semibold px-3 py-1.5 rounded-xl border border-emerald-500/30 whitespace-nowrap opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none shadow-lg">
+      Chat With Us
+    </span>
+  </a>
+
+  <!-- MODAL: FREE TRIAL BOOKING -->
+  <div id="trialModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fadeIn">
+    <div class="glass-card max-w-lg w-full rounded-3xl p-6 sm:p-8 border border-rose-500/40 shadow-2xl relative">
+      <button onclick="closeTrialModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white p-1">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <div class="space-y-4">
+        <div class="text-center space-y-2">
+          <div class="w-12 h-12 rounded-2xl bg-rose-500/20 text-rose-400 flex items-center justify-center mx-auto">
+            <i data-lucide="gift" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-2xl font-display font-bold text-white" data-i18n="m_trial_title">Book Free 1-Day Trial Pass</h3>
+          <p class="text-xs text-slate-300" data-i18n="m_trial_subtitle">Experience our 100% private gym, meet our female trainers, and get a free body composition analysis.</p>
+        </div>
+
+        <form onsubmit="handleTrialSubmit(event)" class="space-y-3.5 pt-2">
+          <div>
+            <label class="block text-xs font-semibold text-rose-300 mb-1">Your Full Name</label>
+            <input type="text" id="trialName" required placeholder="আপনার নাম" class="w-full bg-brand-deepPlum/90 border border-rose-500/30 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none focus:border-rose-400" />
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-rose-300 mb-1">Mobile / WhatsApp Number</label>
+            <input type="tel" id="trialPhone" required placeholder="01XXXXXXXXX" class="w-full bg-brand-deepPlum/90 border border-rose-500/30 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none focus:border-rose-400" />
+          </div>
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <label class="block text-xs font-semibold text-rose-300 mb-1">Preferred Date</label>
+              <input type="date" id="trialDate" required class="w-full bg-brand-deepPlum/90 border border-rose-500/30 rounded-xl px-3 py-2.5 text-white text-xs focus:outline-none focus:border-rose-400" />
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-rose-300 mb-1">Preferred Shift</label>
+              <select id="trialShift" class="w-full bg-brand-deepPlum/90 border border-rose-500/30 rounded-xl px-3 py-2.5 text-white text-xs focus:outline-none focus:border-rose-400">
+                <option value="morning">Morning (6 AM - 11 AM)</option>
+                <option value="afternoon">Afternoon (2 PM - 5 PM)</option>
+                <option value="evening">Evening (5 PM - 10 PM)</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" class="w-full bg-gradient-to-r from-rose-500 to-amber-500 hover:from-rose-600 hover:to-amber-600 text-white font-bold py-3.5 rounded-xl shadow-glow-rose transition flex items-center justify-center gap-2 text-sm mt-4">
+            <i data-lucide="check-circle" class="w-4 h-4"></i>
+            <span data-i18n="m_trial_btn">Confirm Free Pass Reservation</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: ONLINE MEMBERSHIP CHECKOUT (bKash/Nagad Simulation) -->
+  <div id="checkoutModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fadeIn">
+    <div class="glass-card max-w-lg w-full rounded-3xl p-6 sm:p-8 border border-rose-500/40 shadow-2xl relative">
+      <button onclick="closeCheckoutModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white p-1">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <div class="space-y-4">
+        <div class="text-center space-y-1">
+          <span class="text-xs font-bold text-amber-400 uppercase tracking-wider">Instant Online Registration</span>
+          <h3 class="text-2xl font-display font-bold text-white" id="modalPlanName">3-Month Transformation</h3>
+          <p class="text-xl font-extrabold text-gradient-gold" id="modalPlanPrice">৳ 4,500</p>
+        </div>
+
+        <form onsubmit="handleCheckoutSubmit(event)" class="space-y-3 pt-1">
+          <div>
+            <label class="block text-xs font-semibold text-rose-300 mb-1">Member Name</label>
+            <input type="text" id="coName" required placeholder="আপনার নাম" class="w-full bg-brand-deepPlum/90 border border-rose-500/30 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none focus:border-rose-400" />
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-rose-300 mb-1">Mobile / WhatsApp Number</label>
+            <input type="tel" id="coPhone" required placeholder="01XXXXXXXXX" class="w-full bg-brand-deepPlum/90 border border-rose-500/30 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none focus:border-rose-400" />
+          </div>
+
+          <!-- Payment Method Selection -->
+          <div>
+            <label class="block text-xs font-semibold text-rose-300 mb-1.5">Select Payment Method</label>
+            <div class="grid grid-cols-2 gap-3">
+              <label class="border border-rose-500/30 rounded-xl p-3 flex items-center gap-3 cursor-pointer bg-brand-deepPlum/60 hover:border-rose-400 transition">
+                <input type="radio" name="payMethod" value="bkash" checked class="text-rose-500 focus:ring-0" />
+                <span class="text-xs font-bold text-pink-400">bKash Online</span>
+              </label>
+              <label class="border border-rose-500/30 rounded-xl p-3 flex items-center gap-3 cursor-pointer bg-brand-deepPlum/60 hover:border-rose-400 transition">
+                <input type="radio" name="payMethod" value="nagad" class="text-orange-500 focus:ring-0" />
+                <span class="text-xs font-bold text-orange-400">Nagad Online</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="bg-brand-deepPlum/80 p-3 rounded-xl border border-rose-500/20 text-[11px] text-slate-300">
+            💡 After submission, an instant SMS receipt & digital member ID card will be issued to your WhatsApp.
+          </div>
+
+          <button type="submit" class="w-full bg-gradient-to-r from-rose-500 to-amber-500 hover:from-rose-600 hover:to-amber-600 text-white font-bold py-3.5 rounded-xl shadow-glow-rose transition flex items-center justify-center gap-2 text-sm mt-3">
+            <i data-lucide="lock" class="w-4 h-4"></i>
+            <span>Complete Registration & Pay</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toastNotification" class="fixed top-6 right-6 z-50 hidden glass-card border border-rose-500/40 rounded-2xl p-4 shadow-2xl max-w-sm flex items-start gap-3 animate-slideIn">
+    <div class="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+      <i data-lucide="check-circle" class="w-5 h-5"></i>
+    </div>
+    <div>
+      <h4 class="text-sm font-bold text-white" id="toastTitle">Success!</h4>
+      <p class="text-xs text-slate-300 mt-0.5" id="toastMessage">Your request has been received.</p>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Language Dictionary (English & Bangla)
+    const translations = {
+      en: {
+        topbar_badge: "Special Offer",
+        topbar_text: "🎉 Free 1-Day VIP Trial Pass + Body Composition Analysis for Narayanganj Women!",
+        topbar_btn: "Claim Now →",
+        nav_about: "About Us",
+        nav_programs: "Programs",
+        nav_schedule: "Class Routine",
+        nav_trainers: "Female Trainers",
+        nav_pricing: "Membership",
+        nav_calc: "BMI & Diet",
+        nav_contact: "Contact",
+        nav_book_btn: "Book Free Trial",
+        hero_badge: "100% Female Environment • Absolute Privacy Guaranteed",
+        hero_title_1: "Transform Your Body & Mind In",
+        hero_title_2: "Complete Privacy & Comfort",
+        hero_desc: "Narayanganj's most exclusive female-only fitness studio. Certified women trainers, customized weight loss & PCOS recovery programs, high-energy Zumba, Yoga, and state-of-the-art equipment designed specifically for women.",
+        feat_pill_1: "100% Female Staff & Trainers",
+        feat_pill_2: "No Men Allowed At Any Time",
+        feat_pill_3: "Personalized Diet & Workout Plans",
+        hero_cta_primary: "Book Free 1-Day Trial",
+        hero_cta_secondary: "View Class Schedule",
+        stat_1: "FB Community & Members",
+        stat_2: "Female-Only Privacy",
+        stat_3: "Narayanganj's #1 Choice",
+        hero_card_tag: "Chashara, Narayanganj Studio",
+        hero_card_shift: "Operating Shifts",
+        hero_quick_title: "⚡ Quick Free Pass Reservation",
+        hero_quick_btn: "Claim My Free 1-Day Pass",
+        why_badge: "Designed Exclusively For Women",
+        why_title_1: "Why Narayanganj Women Love",
+        why_title_2: "Lady Fitness",
+        why_subtitle: "We understand the specific fitness challenges, privacy needs, and cultural comfort required by women in Narayanganj.",
+        prog_badge: "Transformative Workouts",
+        prog_title_1: "Programs Crafted For",
+        prog_title_2: "Every Woman's Goal",
+        prog_subtitle: "Whether you want rapid fat loss, toned curves, posture correction, or mental stress relief, we have the ideal regimen for you."
+      },
+      bn: {
+        topbar_badge: "বিশেষ অফার",
+        topbar_text: "🎉 নারীদের জন্য ফ্রি ১-দিনের ভিআইপি ট্রায়াল পাস ও বডি কম্পোজিশন টেস্ট!",
+        topbar_btn: "এখনই নিন →",
+        nav_about: "আমাদের সম্পর্কে",
+        nav_programs: "প্রোগ্রামসমূহ",
+        nav_schedule: "ক্লাস রুটিন",
+        nav_trainers: "লেডি ট্রেইনার",
+        nav_pricing: "মেম্বারশিপ প্যাকেজ",
+        nav_calc: "বিএমআই ও ডায়েট",
+        nav_contact: "যোগাযোগ",
+        nav_book_btn: "ফ্রি ট্রায়াল বুক করুন",
+        hero_badge: "১০০% নারীদের জন্য সংরক্ষিত • সম্পূর্ণ প্রাইভেসি ও নিরাপত্তা",
+        hero_title_1: "সম্পূর্ণ নিরাপদ ও প্রাইভেট পরিবেশে",
+        hero_title_2: "গড়ে তুলুন কাঙ্ক্ষিত ফিটনেস",
+        hero_desc: "নারায়ণগঞ্জের প্রথম ও শীর্ষস্থানীয় শুধুমাত্র নারীদের বিশেষায়িত জিম। অভিজ্ঞ নারী ট্রেইনার, দ্রুত ওজন কমানো ও পিসিওএস (PCOS) কেয়ার, জুম্বা ড্যান্স, ইয়োগা এবং নারীদের উপযোগী আধুনিক ইকুইপমেন্ট।",
+        feat_pill_1: "১০০% নারী ট্রেইনার ও স্টাফ",
+        feat_pill_2: "পুরুষদের সম্পূর্ণ প্রবেশ নিষিদ্ধ",
+        feat_pill_3: "কাস্টমাইজড দেশীয় ডায়েট প্ল্যান",
+        hero_cta_primary: "ফ্রি ১-দিনের ট্রায়াল নিন",
+        hero_cta_secondary: "ক্লাস রুটিন দেখুন",
+        stat_1: "ফেসবুক ফলোয়ার ও মেম্বার",
+        stat_2: "সম্পূর্ণ ফিমেল প্রাইভেসি",
+        stat_3: "নারায়ণগঞ্জের বিশ্বস্ত জিম",
+        hero_card_tag: "চাষাড়া, নারায়ণগঞ্জ স্টুডিও",
+        hero_card_shift: "খোলা থাকার সময়",
+        hero_quick_title: "⚡ দ্রুত ফ্রি পাস বুকিং করুন",
+        hero_quick_btn: "আমার ফ্রি পাস কনফার্ম করুন",
+        why_badge: "শুধুমাত্র নারীদের জন্য ডিজাইনকৃত",
+        why_title_1: "কেন নারায়ণগঞ্জের নারীদের প্রথম পছন্দ",
+        why_title_2: "লেডি ফিটনেস জিম",
+        why_subtitle: "আমরা বুঝি নারীদের ফিটনেস ও নিরাপত্তার গুরুত্ব। যেকোনো ধরণের অস্বস্তি ছাড়া স্বাচ্ছন্দ্যে ফিট থাকার নির্ভরযোগ্য ঠিকানা।"
+      }
+    };
+
+    let currentLang = 'en';
+
+    function toggleLanguage() {
+      currentLang = currentLang === 'en' ? 'bn' : 'en';
+      document.getElementById('currentLangLabel').textContent = currentLang === 'en' ? 'বাংলা' : 'English';
+      
+      const elements = document.querySelectorAll('[data-i18n]');
+      elements.forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[currentLang] && translations[currentLang][key]) {
+          el.innerHTML = translations[currentLang][key];
+        }
+      });
+    }
+
+    // Schedule Filter Logic
+    function filterSchedule(category, btn) {
+      document.querySelectorAll('#scheduleFilters .filter-btn').forEach(b => {
+        b.className = "px-5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-brand-cardDark text-slate-300 hover:text-white border border-rose-500/20 transition filter-btn";
+      });
+      btn.className = "px-5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-rose-600 text-white shadow-glow-rose transition filter-btn";
+
+      const items = document.querySelectorAll('#scheduleGrid .schedule-item');
+      items.forEach(item => {
+        if (category === 'all') {
+          item.style.display = 'block';
+        } else {
+          const itemCat = item.getAttribute('data-category');
+          if (itemCat && itemCat.includes(category)) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        }
+      });
+    }
+
+    // BMI Calculator Logic
+    function calculateBMI(e) {
+      e.preventDefault();
+      const height = parseFloat(document.getElementById('calcHeight').value) / 100;
+      const weight = parseFloat(document.getElementById('calcWeight').value);
+      const age = parseInt(document.getElementById('calcAge').value);
+      const activity = parseFloat(document.getElementById('calcActivity').value);
+      const goal = document.getElementById('calcGoal').value;
+
+      if (!height || !weight) return;
+
+      const bmi = (weight / (height * height)).toFixed(1);
+      document.getElementById('resBmiVal').textContent = bmi;
+
+      // Category
+      let cat = 'Normal Weight';
+      let colorClass = 'text-emerald-400';
+      if (bmi < 18.5) {
+        cat = 'Underweight';
+        colorClass = 'text-amber-400';
+      } else if (bmi >= 25 && bmi < 30) {
+        cat = 'Overweight';
+        colorClass = 'text-amber-400';
+      } else if (bmi >= 30) {
+        cat = 'Obese';
+        colorClass = 'text-rose-400';
+      }
+      const catEl = document.getElementById('resBmiCat');
+      catEl.textContent = cat;
+      catEl.className = `text-[10px] block font-bold uppercase mt-0.5 ${colorClass}`;
+
+      // Ideal Weight Range
+      const minIdeal = (18.5 * height * height).toFixed(0);
+      const maxIdeal = (24.9 * height * height).toFixed(0);
+      document.getElementById('resIdealVal').textContent = `${minIdeal} - ${maxIdeal} kg`;
+
+      // BMR Calculation (Mifflin-St Jeor for Females)
+      const bmr = (10 * weight) + (6.25 * height * 100) - (5 * age) - 161;
+      let tdee = bmr * activity;
+      
+      if (goal === 'loss') tdee -= 400;
+      if (goal === 'gain') tdee += 300;
+      if (goal === 'pcos') tdee -= 250;
+
+      document.getElementById('resCalVal').textContent = `${Math.round(tdee)} kcal`;
+
+      // Water intake
+      const water = (weight * 0.035).toFixed(1);
+      document.getElementById('resWaterVal').textContent = `${water} L`;
+
+      // Advice text
+      let advice = "Based on your inputs, 3-4 days of moderate aerobics and basic strength training will help you achieve a lean, toned physique.";
+      if (goal === 'loss') {
+        advice = "Focus on our Zumba & Dance Aerobics shifts combined with moderate strength training. Reducing refined sugar and consuming balanced local protein (eggs, fish, lentils) will accelerate fat burn.";
+      } else if (goal === 'pcos') {
+        advice = "Low-impact steady-state cardio combined with resistance workouts helps reduce insulin resistance. Our nutritionist Rimi Rahman can personalize an anti-inflammatory Bangladeshi diet for you.";
+      }
+      document.getElementById('resAdviceText').textContent = advice;
+
+      document.getElementById('bmiResultBox').classList.remove('hidden');
+      showToast("BMI Calculated!", "Your customized fitness stats are ready.");
+    }
+
+    // Modal Handlers
+    function openTrialModal() {
+      document.getElementById('trialModal').classList.remove('hidden');
+    }
+    function closeTrialModal() {
+      document.getElementById('trialModal').classList.add('hidden');
+    }
+
+    function openBookingModal(serviceName) {
+      document.getElementById('modalPlanName').textContent = serviceName;
+      document.getElementById('modalPlanPrice').textContent = "Free Class Reservation";
+      document.getElementById('checkoutModal').classList.remove('hidden');
+    }
+
+    function openCheckoutModal(planName, price) {
+      document.getElementById('modalPlanName').textContent = planName;
+      document.getElementById('modalPlanPrice').textContent = `৳ ${price.toLocaleString()}`;
+      document.getElementById('checkoutModal').classList.remove('hidden');
+    }
+    function closeCheckoutModal() {
+      document.getElementById('checkoutModal').classList.add('hidden');
+    }
+
+    function openVideoTourModal() {
+      openTrialModal();
+    }
+
+    // Mobile Menu Toggle
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    }
+
+    // Toast Utility
+    function showToast(title, message) {
+      const toast = document.getElementById('toastNotification');
+      document.getElementById('toastTitle').textContent = title;
+      document.getElementById('toastMessage').textContent = message;
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 4000);
+    }
+
+    // Form Submissions
+    function handleHeroQuickSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('heroName').value;
+      const phone = document.getElementById('heroPhone').value;
+      
+      confetti({ particleCount: 80, spread: 60, origin: { y: 0.7 } });
+      showToast("Pass Reserved!", `Thank you ${name}. Your free 1-day VIP pass has been registered.`);
+      document.getElementById('heroQuickForm').reset();
+    }
+
+    function handleTrialSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('trialName').value;
+      closeTrialModal();
+      confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
+      showToast("Trial Booked Successfully!", `Congratulations ${name}! Our female coordinator will call you to confirm the time.`);
+    }
+
+    function handleCheckoutSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('coName').value;
+      const plan = document.getElementById('modalPlanName').textContent;
+      closeCheckoutModal();
+      confetti({ particleCount: 120, spread: 80, origin: { y: 0.5 } });
+      showToast("Registration Complete! 🎉", `${name}, your enrollment for ${plan} has been submitted.`);
+    }
+
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('contactName').value;
+      showToast("Message Sent!", `Thank you ${name}. We will get back to you shortly.`);
+      document.getElementById('contactForm').reset();
+    }
+  </script>
+
+</body>
+</html>
